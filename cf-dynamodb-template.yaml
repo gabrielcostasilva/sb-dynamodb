@@ -1,0 +1,14 @@
+Resources:
+    DynamoDBTable:
+        Type: "AWS::DynamoDB::Table"
+        Properties:
+            AttributeDefinitions: 
+              - 
+                AttributeName: "id"
+                AttributeType: "S"
+            BillingMode: "PAY_PER_REQUEST"
+            TableName: "customer"
+            KeySchema: 
+              - 
+                AttributeName: "id"
+                KeyType: "HASH"
